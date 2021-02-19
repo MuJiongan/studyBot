@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Study Bot</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip({animation: true});
+    });
+    </script>
+</head>
+<style>
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-item{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.dropdown-menu{
+
+  background-color: #343A40;
+
+
+}
+.dropdown-item{
+
+  color: whitesmoke;
+
+}
+</style>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Zo</a>
+    <ul class="navbar-nav">
+
+
+      
+    </ul>
+  </nav>
+
+<div class="jumbotron text-center">
+<div class="container">
+  <div class='row'>
+    <div class='col-sm-5'>
+
+      <h1>Study bot</h1>
+
+      <br>
+
+      <a href="https://discordapp.com/oauth2/authorize?client_id=708094484566769726&scope=bot" class="btn btn-outline-primary" role="button" data-placement="right" data-toggle="tooltip" title="Want this bot in your server? Just click on the button and you're all set!">Add to your server</a>
+      <br><br>
+      <h5>Made By Zo#2030</h5>
+    </div>
+    <div class='col-sm-7'>
+      <br>
+      <h1>Features</h1>
+
+      <br>
+
+      <a href="#todo" class="btn btn-warning" role="button" data-placement="left" data-toggle="tooltip" title="Just a simple to-do list. Feel free to add any tasks. Nothing beats the feeling when you complete a task!">To-do List</a>
+      <a href="#timer" class="btn btn-info" role="button" data-placement="right" data-toggle="tooltip" title="A study timer. Time to focus! I'll remind you when the timer is up.">Study Timer</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="text-center">
+
+  <h2 id='todo'>To-do List</h2>
+  <br> <br>
+</div>
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h3><mark>&add task:</mark></h3>
+      <p>Add a task to your to-do list.</p>
+
+      <p>Example: <kbd>&add finish my psychology assignment</kbd></p>
+
+    </div>
+    <div class="col-sm-6">
+      <h3><mark>&get:</mark></h3>
+      <br>
+      <p>View what's on your to-do list</p>
+
+    </div>
+
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3><mark>&wc [number]:</mark></h3>
+      <p>Cross out the task by its number, meaning that you completed the task</p>
+      <p>If you have two tasks on your to-do list, use <kbd>&wc 2</kbd> to cross out the last task</p>
+    </div>
+    <div class="col-sm-6">
+      <h3><mark>&clear:</mark></h3>
+      <br>
+      <p>Empty your to-do list.</p>
+
+    </div>
+
+  </div>
+</div>
+<br>
+<div class="text-center">
+  <h2 id='timer'>Study Timer</h2>
+  <br> <br>
+</div>
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h3><mark>&study [minutes]:</mark></h3>
+      <p>Set a timer of [minutes] to study.</p>
+      <p>Example: Study 50 minutes: <kbd>&study 50</kbd></p>
+
+    </div>
+    <div class="col-sm-4">
+      <h3><mark>&timer:</mark></h3>
+      <br>
+      <p>View the time left on your timer</p>
+
+    </div>
+    <div class="col-sm-4">
+      <h3><mark>&stop:</mark></h3>
+      <br>
+      <p>Stop the timer.</p>
+
+
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
